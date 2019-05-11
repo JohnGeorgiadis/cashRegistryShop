@@ -1,7 +1,6 @@
 // Load plugins
 const browsersync = require("browser-sync").create();
 const gulp = require("gulp");
-const uglify = require("gulp-uglify");
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function (cb) {
@@ -23,14 +22,6 @@ gulp.task('vendor', function (cb) {
 
   cb();
 
-});
-
-gulp.task('scripts', function () {
-  return gulp.src('./**/*.js')
-  // Minify the file
-      .pipe(uglify())
-      // Output
-      .pipe(gulp.dest('./vendor/js'))
 });
 
 // BrowserSync

@@ -23,7 +23,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="logo.png" alt="company's logo"/></a>
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="company's logo" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -116,7 +116,8 @@
     </div>
     <div class="col-md-4 mb-5">
       <div class="card h-100">
-        <img class="card-img-top" src="https://www.elzab.com.pl/media/djcatalog2/images/category/0/kasy-male_l.jpg" alt="">
+        <img class="card-img-top" src="https://www.elzab.com.pl/media/djcatalog2/images/category/0/kasy-male_l.jpg"
+             alt="">
         <div class="card-body">
           <h4 class="card-title">Elzab</h4>
           <p class="card-text">Producent urzadzen fiskalnych</p>
@@ -145,17 +146,41 @@
 <!-- /.container -->
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+<footer class="bg-dark container-fluid">
+  <div class="row text-center">
+    <div class="col-md-6 text-white">
+      <p>Copyright &copy; CASH-BIS Systemy Fiskalne - Biurowiec H.S.P. "Samopomoc Chłopska"</p>
+      <h2>Kontakt</h2>
+      <hr>
+      <address>
+        <strong>Fabryczna 5/30</strong>
+        <br>Zywiec 34-300
+        <br>Biurowiec H.S.P. "Samopomoc Chłopska"
+        <br>
+      </address>
+      <address>
+        <abbr title="Phone"></abbr>
+        tel: +48 33 444 60 08
+        <br>
+        tel: +48 506 397 458
+        <br>
+        <abbr title="Email">Email:</abbr>
+        <a href="mailto:cashbis@life.pl">cashbis@life.pl</a>
+      </address>
+    </div>
+    <div class="col-md-6" id="map"></div>
   </div>
-  <!-- /.container -->
 </footer>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!-- Core JavaScript and Maps-->
+<script src="js/index.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxAxGP95dwCJbCseB11vwus0An6yAA-XU&callback=initMap">
+</script>
 </body>
 
 </html>
