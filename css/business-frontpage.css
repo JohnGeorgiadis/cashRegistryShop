@@ -16,6 +16,16 @@ body {
   height: 40vh;
 }
 
-ul,li,ol {
+ul, li, ol {
   padding: 5px;
+}
+
+.bg-darker {
+  background-color: #313d4d;
+}
+
+.page-header {
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
